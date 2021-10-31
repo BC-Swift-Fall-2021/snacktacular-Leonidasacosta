@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -35,11 +35,11 @@
             <objects>
                 <viewController id="IaM-aF-WgJ" customClass="SpotListViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fd0-7F-n6f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-av-ulu">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="60" id="3oZ-dH-M4M" customClass="SpotTableViewCell" customModule="Snacktacular" customModuleProvider="target">
@@ -153,11 +153,11 @@
             <objects>
                 <viewController id="X2S-Ki-D4w" customClass="SpotDetailViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="01S-OX-txu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61M-XI-oMB">
-                                <rect key="frame" x="0.0" y="88" width="414" height="380"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="380"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Restaurant Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRr-Tl-IC2">
                                         <rect key="frame" x="8" y="8" width="398" height="33"/>
@@ -241,15 +241,21 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title=" Photo" image="camera.fill" catalog="system"/>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvU-9J-QWM">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="180"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="2Sp-aN-3r2" firstAttribute="top" secondItem="CvU-9J-QWM" secondAttribute="bottom" id="0rj-3K-nFN"/>
                                     <constraint firstItem="SUU-Qk-IKv" firstAttribute="top" secondItem="iRr-Tl-IC2" secondAttribute="bottom" constant="2" id="2lr-6m-52y"/>
                                     <constraint firstItem="SUU-Qk-IKv" firstAttribute="leading" secondItem="61M-XI-oMB" secondAttribute="leading" constant="8" id="6Jt-ia-17W"/>
+                                    <constraint firstItem="CvU-9J-QWM" firstAttribute="leading" secondItem="61M-XI-oMB" secondAttribute="leading" id="7I8-cH-sRW"/>
                                     <constraint firstAttribute="height" constant="380" id="7JB-T0-lDs"/>
                                     <constraint firstAttribute="trailing" secondItem="iRr-Tl-IC2" secondAttribute="trailing" constant="8" id="7sY-Cr-7kc"/>
                                     <constraint firstItem="2Sp-aN-3r2" firstAttribute="leading" secondItem="61M-XI-oMB" secondAttribute="leading" id="CdR-rw-pb2"/>
                                     <constraint firstItem="STg-Ff-hee" firstAttribute="leading" secondItem="61M-XI-oMB" secondAttribute="leading" constant="8" id="Fc1-wb-B2W"/>
+                                    <constraint firstAttribute="trailing" secondItem="CvU-9J-QWM" secondAttribute="trailing" id="FjI-4a-bQy"/>
                                     <constraint firstAttribute="trailing" secondItem="2Sp-aN-3r2" secondAttribute="trailing" id="GlE-t5-bfv"/>
                                     <constraint firstItem="xC9-7k-pDr" firstAttribute="top" secondItem="2Sp-aN-3r2" secondAttribute="bottom" constant="6" id="Lth-IK-tRW"/>
                                     <constraint firstAttribute="trailing" secondItem="cht-Hb-RGx" secondAttribute="trailing" constant="8" id="MlO-aW-Aq6"/>
@@ -257,6 +263,7 @@
                                     <constraint firstItem="cht-Hb-RGx" firstAttribute="leading" secondItem="YC4-23-Md8" secondAttribute="trailing" constant="8" id="Vf0-vs-9Qt"/>
                                     <constraint firstAttribute="trailing" secondItem="SUU-Qk-IKv" secondAttribute="trailing" constant="8" id="h5f-oX-VNn"/>
                                     <constraint firstItem="STg-Ff-hee" firstAttribute="top" secondItem="2Sp-aN-3r2" secondAttribute="bottom" constant="8" id="hSb-Uf-qFM"/>
+                                    <constraint firstItem="CvU-9J-QWM" firstAttribute="top" secondItem="SUU-Qk-IKv" secondAttribute="bottom" constant="2" id="mcm-aD-cTl"/>
                                     <constraint firstItem="2Sp-aN-3r2" firstAttribute="top" secondItem="61M-XI-oMB" secondAttribute="top" constant="242" id="q8W-nX-lxq"/>
                                     <constraint firstItem="iRr-Tl-IC2" firstAttribute="leading" secondItem="61M-XI-oMB" secondAttribute="leading" constant="8" id="q9n-5q-bil"/>
                                     <constraint firstItem="cht-Hb-RGx" firstAttribute="top" secondItem="2Sp-aN-3r2" secondAttribute="bottom" constant="4" id="rHs-xp-Ggg"/>
@@ -298,6 +305,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="addressTextField" destination="SUU-Qk-IKv" id="dgB-qh-se2"/>
+                        <outlet property="mapView" destination="CvU-9J-QWM" id="GVB-xL-YEG"/>
                         <outlet property="nameTextField" destination="iRr-Tl-IC2" id="BWi-7Y-At3"/>
                         <outlet property="ratingLabel" destination="xC9-7k-pDr" id="ax5-AU-DIN"/>
                     </connections>
@@ -312,7 +320,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="xUE-t5-UGR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="byE-R7-Z6n">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="byE-R7-Z6n">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="PrimaryColor"/>
@@ -346,7 +354,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="e1l-ZR-fHv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T2w-vc-wQ7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="T2w-vc-wQ7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="PrimaryColor"/>
