@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>850330824800-bhh26a2cnblm3oe6gskj0ejojmhcbb8t.apps.googleusercontent.com</string>
+	<string>179430772057-k0ns8fqfjbkv9miaocdhfrvfj4bdm91n.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.850330824800-bhh26a2cnblm3oe6gskj0ejojmhcbb8t</string>
+	<string>com.googleusercontent.apps.179430772057-k0ns8fqfjbkv9miaocdhfrvfj4bdm91n</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCVfrt_jRtesu4TharT2HSeY89FXQKeQVk</string>
+	<string>AIzaSyBASBPYO4VNtQ7Vehnx690mBhRxZnSGguc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>850330824800</string>
+	<string>179430772057</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.acosta.Snacktacular</string>
 	<key>PROJECT_ID</key>
-	<string>snacktacular-98c84</string>
+	<string>snacktacular-fe349</string>
 	<key>STORAGE_BUCKET</key>
-	<string>snacktacular-98c84.appspot.com</string>
+	<string>snacktacular-fe349.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:850330824800:ios:dc8b686dd3682880b29305</string>
+	<string>1:179430772057:ios:a3ca779c2ceb0bda149048</string>
 </dict>
 </plist>

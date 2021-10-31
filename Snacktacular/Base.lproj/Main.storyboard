@@ -284,6 +284,12 @@
                                 <action selector="cancelButtonPressed:" destination="X2S-Ki-D4w" id="2SV-yL-Q6q"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hFH-GW-0uF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="X2S-Ki-D4w" id="Rq2-2j-Ett"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
