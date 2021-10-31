@@ -11,6 +11,7 @@
 		634FF71D272C86A70074E75C /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634FF71C272C86A70074E75C /* SpotDetailViewController.swift */; };
 		63514A48272F158C00FE16C3 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63514A47272F158C00FE16C3 /* UIViewController+alert.swift */; };
 		63514A4A272F1B2000FE16C3 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63514A49272F1B2000FE16C3 /* Spots.swift */; };
+		63514A4C272F333300FE16C3 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63514A4B272F333300FE16C3 /* APIKeys.swift */; };
 		638BCA0C272E352E001A3007 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 638BCA0B272E352E001A3007 /* GoogleService-Info.plist */; };
 		639A9F5D272B964C007306C8 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F5C272B964C007306C8 /* SpotListViewController.swift */; };
 		63C139B6272B2F4700B229B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C139B5272B2F4700B229B6 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 		634FF71C272C86A70074E75C /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		63514A47272F158C00FE16C3 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		63514A49272F1B2000FE16C3 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
+		63514A4B272F333300FE16C3 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		638BCA0B272E352E001A3007 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		639A9F5C272B964C007306C8 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		63C139B2272B2F4700B229B6 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				634FF71A272C834E0074E75C /* SpotTableViewCell.swift */,
 				634FF71C272C86A70074E75C /* SpotDetailViewController.swift */,
 				63514A47272F158C00FE16C3 /* UIViewController+alert.swift */,
+				63514A4B272F333300FE16C3 /* APIKeys.swift */,
 				63C139BB272B2F4700B229B6 /* Main.storyboard */,
 				63C139BE272B2F4800B229B6 /* Assets.xcassets */,
 				63C139C0272B2F4800B229B6 /* LaunchScreen.storyboard */,
@@ -252,6 +255,7 @@
 				634FF71D272C86A70074E75C /* SpotDetailViewController.swift in Sources */,
 				63514A4A272F1B2000FE16C3 /* Spots.swift in Sources */,
 				634FF71B272C834E0074E75C /* SpotTableViewCell.swift in Sources */,
+				63514A4C272F333300FE16C3 /* APIKeys.swift in Sources */,
 				63E770FA272DC0DA002DFE72 /* Spot.swift in Sources */,
 				63C139B8272B2F4700B229B6 /* SceneDelegate.swift in Sources */,
 				63514A48272F158C00FE16C3 /* UIViewController+alert.swift in Sources */,
