@@ -52,10 +52,13 @@ class SpotListViewController: UIViewController {
         switch sortSegmentedControl.selectedSegmentIndex {
         case 0: //A-Z
             spots.spotArray.sort(by: {$0.name < $1.name})
+            
         case 1: // closest
             print("TODO")
+            
         case 2: //averageRating
             print("TODO")
+            
         default:
             print("HEY! You shouldn't have gotten here. Check out the segmented control for an error!")
         }
