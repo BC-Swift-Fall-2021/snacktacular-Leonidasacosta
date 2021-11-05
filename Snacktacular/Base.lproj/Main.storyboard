@@ -371,6 +371,11 @@
                                         <connections>
                                             <outlet property="reviewTextLabel" destination="xce-hJ-SQk" id="RA5-oA-ZCB"/>
                                             <outlet property="reviewTitleLabel" destination="LKA-JL-b6W" id="Fx4-yS-Nmc"/>
+                                            <outletCollection property="starImageCollection" destination="0iJ-4V-sdE" collectionClass="NSMutableArray" id="2pl-D1-Jxj"/>
+                                            <outletCollection property="starImageCollection" destination="Slp-CZ-PBg" collectionClass="NSMutableArray" id="Fyk-5y-ckn"/>
+                                            <outletCollection property="starImageCollection" destination="rIb-wF-uOH" collectionClass="NSMutableArray" id="KZS-Ri-4tH"/>
+                                            <outletCollection property="starImageCollection" destination="5Ac-HC-4o6" collectionClass="NSMutableArray" id="cKP-VR-cy3"/>
+                                            <outletCollection property="starImageCollection" destination="Q8T-Yk-5ZD" collectionClass="NSMutableArray" id="ijo-hT-vRS"/>
                                             <segue destination="7YY-1c-ylh" kind="show" identifier="ShowReview" id="0hm-nn-G9U"/>
                                         </connections>
                                     </tableViewCell>
@@ -389,6 +394,7 @@
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="HrE-fx-ohN"/>
                         <barButtonItem title="Lookup Place" id="Tqe-Nm-7ef">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="locationButtonPressed:" destination="X2S-Ki-D4w" id="EcT-3z-KBr"/>
                             </connections>
@@ -426,12 +432,12 @@
         <scene sceneID="0Wu-KH-Lnz">
             <objects>
                 <tableViewController id="7YY-1c-ylh" customClass="ReviewTableViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="UAf-nA-OrW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="UAf-nA-OrW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="51K-pA-ItI">
-                            <rect key="frame" x="0.0" y="838" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="683" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
@@ -439,7 +445,7 @@
                             <tableViewSection id="eNh-Hg-ail">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="62" id="b2f-ev-2Zo">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="62"/>
+                                        <rect key="frame" x="0.0" y="18" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b2f-ev-2Zo" id="Q6s-ke-u6t">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
@@ -479,7 +485,7 @@
                             <tableViewSection id="ZaD-OE-SVx">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="76" id="h0d-AX-UGz">
-                                        <rect key="frame" x="0.0" y="173.5" width="414" height="76"/>
+                                        <rect key="frame" x="0.0" y="116" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h0d-AX-UGz" id="3fW-jY-qhh">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
@@ -517,6 +523,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="7YY-1c-ylh" eventType="touchUpInside" id="PZe-eU-FuD"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-zO-ZVj">
                                                             <rect key="frame" x="42" y="0.0" width="40" height="40"/>
@@ -530,6 +539,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="7YY-1c-ylh" eventType="touchUpInside" id="SsQ-gS-drz"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvB-8b-SGl">
                                                             <rect key="frame" x="84" y="0.0" width="40" height="40"/>
@@ -543,6 +555,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="7YY-1c-ylh" eventType="touchUpInside" id="kg8-VU-tjR"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEG-cw-WbA">
                                                             <rect key="frame" x="126" y="0.0" width="40" height="40"/>
@@ -556,6 +571,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="7YY-1c-ylh" eventType="touchUpInside" id="QIJ-um-2i8"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZV-bR-Ne4">
                                                             <rect key="frame" x="168" y="0.0" width="40" height="40"/>
@@ -569,6 +587,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="7YY-1c-ylh" eventType="touchUpInside" id="uCo-6F-W69"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -593,7 +614,7 @@
                             <tableViewSection id="FJI-6n-nK2">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DTg-hv-K8s">
-                                        <rect key="frame" x="0.0" y="316.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="228" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DTg-hv-K8s" id="Kt1-Dd-dDg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -637,7 +658,7 @@
                             <tableViewSection id="2HI-je-3iA">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="278" id="sIz-mf-AiC">
-                                        <rect key="frame" x="0.0" y="427" width="414" height="278"/>
+                                        <rect key="frame" x="0.0" y="307.5" width="414" height="278"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sIz-mf-AiC" id="EAd-H2-VSC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="278"/>
@@ -690,7 +711,7 @@
                             <tableViewSection id="5be-WE-2S8">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bZ8-i4-UdL">
-                                        <rect key="frame" x="0.0" y="772" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="621.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bZ8-i4-UdL" id="u83-Bc-Ezo">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -752,6 +773,11 @@
                         <outlet property="reviewTextView" destination="uba-Gy-z7i" id="pxc-eh-QNk"/>
                         <outlet property="reviewTitleField" destination="H8S-N2-Crm" id="hVY-vk-qbv"/>
                         <outlet property="saveBarButton" destination="FsB-Lb-16A" id="vN4-Eg-wfM"/>
+                        <outletCollection property="starButtonCollection" destination="X8h-gi-LtU" collectionClass="NSMutableArray" id="mzT-dd-iJP"/>
+                        <outletCollection property="starButtonCollection" destination="Fva-zO-ZVj" collectionClass="NSMutableArray" id="YJ5-vL-IZf"/>
+                        <outletCollection property="starButtonCollection" destination="AvB-8b-SGl" collectionClass="NSMutableArray" id="wRL-xl-DNy"/>
+                        <outletCollection property="starButtonCollection" destination="gEG-cw-WbA" collectionClass="NSMutableArray" id="et8-6U-hUh"/>
+                        <outletCollection property="starButtonCollection" destination="kZV-bR-Ne4" collectionClass="NSMutableArray" id="9FK-O3-sm2"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsN-Nz-F9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -23,6 +23,8 @@ class SpotDetailViewController: UIViewController {
     var locationManager: CLLocationManager!
     var reviews: Reviews!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
