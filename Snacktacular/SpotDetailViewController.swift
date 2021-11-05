@@ -43,6 +43,13 @@ class SpotDetailViewController: UIViewController {
         updateUserInterface()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reviews.loadData(spot: spot) {
+            self.tableView.reloadData()
+        }
+    }
+    
     func setupMapView() {
         let region = MKCoordinateRegion(center: spot.coordinate, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
         mapView.setRegion(region, animated: true)
@@ -58,7 +65,6 @@ class SpotDetailViewController: UIViewController {
         mapView.removeAnnotations(mapView.annotations)
         mapView.addAnnotation(spot)
         mapView.setCenter(spot.coordinate, animated: true)
-//        mapView.setCamer
     }
     
     func updateFromInterface() {
@@ -81,6 +87,19 @@ class SpotDetailViewController: UIViewController {
         default:
             print("😡 Couldn't find a case for segue identifier \(segue.identifier). This should not have happened!")
         }
+    }
+    
+    func saveCancelAlert(title: String, message: String, segueIdentifier: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let saveAction = UIAlertAction(title: "Save", style: .default) { (_) in
+            self.spot.saveData { (success) in
+                self.performSegue(withIdentifier: segueIdentifier, sender: nil)
+            }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true, completion: nil)
     }
     
     func leaveViewController() {
@@ -115,9 +134,13 @@ class SpotDetailViewController: UIViewController {
     }
     
     @IBAction func ratingButtonPressed(_ sender: UIButton) {
-        // TODO: eventually check if spot was saved. If it was not saved, save it & segue if save was succcessful. Otherwise, if it was saved successfully, segue as below:
-        performSegue(withIdentifier: "AddReview", sender: nil)
+        if spot.documentID == "" {
+            saveCancelAlert(title: "This Venue Has Not Been Saved", message: "You must save this venue before you can review it.", segueIdentifier: "AddReview")
+        } else {
+            performSegue(withIdentifier: "AddReview", sender: nil)
+        }
     }
+    
 }
 
 extension SpotDetailViewController: GMSAutocompleteViewControllerDelegate {
@@ -227,9 +250,8 @@ extension SpotDetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath)
-            // TODO: deal with custom cell
-        // update custom SpotReviewTableViewCell here
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! SpotReviewTableViewCell
+        cell.review = reviews.reviewArray[indexPath.row]
         return cell
     }
     
