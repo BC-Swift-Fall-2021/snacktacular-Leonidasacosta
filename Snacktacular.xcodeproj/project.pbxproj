@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		633C5D3227338DE400B81D58 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C5D3127338DE400B81D58 /* ReviewTableViewController.swift */; };
+		6347795C273CE5AE0058FD84 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347795B273CE5AE0058FD84 /* UIView+addBorder.swift */; };
+		6347795E273CE6EE0058FD84 /* UIBarButtonItem+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347795D273CE6EE0058FD84 /* UIBarButtonItem+hide.swift */; };
 		634FF71B272C834E0074E75C /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634FF71A272C834E0074E75C /* SpotTableViewCell.swift */; };
 		634FF71D272C86A70074E75C /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634FF71C272C86A70074E75C /* SpotDetailViewController.swift */; };
 		63514A48272F158C00FE16C3 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63514A47272F158C00FE16C3 /* UIViewController+alert.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		5FCC0FE6E8F00475F6EB3C93 /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
 		633C5D3127338DE400B81D58 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		6347795B273CE5AE0058FD84 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
+		6347795D273CE6EE0058FD84 /* UIBarButtonItem+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+hide.swift"; sourceTree = "<group>"; };
 		634FF71A272C834E0074E75C /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		634FF71C272C86A70074E75C /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		63514A47272F158C00FE16C3 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				63CCF6662734CDA9000BA30A /* SpotReviewTableViewCell.swift */,
 				633C5D3127338DE400B81D58 /* ReviewTableViewController.swift */,
 				63514A47272F158C00FE16C3 /* UIViewController+alert.swift */,
+				6347795B273CE5AE0058FD84 /* UIView+addBorder.swift */,
+				6347795D273CE6EE0058FD84 /* UIBarButtonItem+hide.swift */,
 				63514A4B272F333300FE16C3 /* APIKeys.swift */,
 				63C139BB272B2F4700B229B6 /* Main.storyboard */,
 				63C139BE272B2F4800B229B6 /* Assets.xcassets */,
@@ -269,12 +275,14 @@
 				633C5D3227338DE400B81D58 /* ReviewTableViewController.swift in Sources */,
 				63CCF66327348068000BA30A /* Review.swift in Sources */,
 				63514A4A272F1B2000FE16C3 /* Spots.swift in Sources */,
+				6347795E273CE6EE0058FD84 /* UIBarButtonItem+hide.swift in Sources */,
 				634FF71B272C834E0074E75C /* SpotTableViewCell.swift in Sources */,
 				63CCF6672734CDA9000BA30A /* SpotReviewTableViewCell.swift in Sources */,
 				63514A4C272F333300FE16C3 /* APIKeys.swift in Sources */,
 				63E770FA272DC0DA002DFE72 /* Spot.swift in Sources */,
 				63C139B8272B2F4700B229B6 /* SceneDelegate.swift in Sources */,
 				63514A48272F158C00FE16C3 /* UIViewController+alert.swift in Sources */,
+				6347795C273CE5AE0058FD84 /* UIView+addBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
