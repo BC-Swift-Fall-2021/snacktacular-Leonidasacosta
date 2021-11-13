@@ -15,6 +15,7 @@
 		63514A48272F158C00FE16C3 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63514A47272F158C00FE16C3 /* UIViewController+alert.swift */; };
 		63514A4A272F1B2000FE16C3 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63514A49272F1B2000FE16C3 /* Spots.swift */; };
 		63514A4C272F333300FE16C3 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63514A4B272F333300FE16C3 /* APIKeys.swift */; };
+		63878587273F292100F59F08 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63878586273F292100F59F08 /* Photo.swift */; };
 		638BCA0C272E352E001A3007 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 638BCA0B272E352E001A3007 /* GoogleService-Info.plist */; };
 		63983575273E1236000EDB4D /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63983574273E1236000EDB4D /* PhotoViewController.swift */; };
 		639A9F5D272B964C007306C8 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F5C272B964C007306C8 /* SpotListViewController.swift */; };
@@ -41,6 +42,7 @@
 		63514A47272F158C00FE16C3 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		63514A49272F1B2000FE16C3 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		63514A4B272F333300FE16C3 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		63878586273F292100F59F08 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		638BCA0B272E352E001A3007 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63983574273E1236000EDB4D /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		639A9F5C272B964C007306C8 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				63514A49272F1B2000FE16C3 /* Spots.swift */,
 				63CCF66227348068000BA30A /* Review.swift */,
 				63CCF66427349D71000BA30A /* Reviews.swift */,
+				63878586273F292100F59F08 /* Photo.swift */,
 				63C139B9272B2F4700B229B6 /* LoginViewController.swift */,
 				639A9F5C272B964C007306C8 /* SpotListViewController.swift */,
 				634FF71A272C834E0074E75C /* SpotTableViewCell.swift */,
@@ -282,6 +285,7 @@
 				634FF71B272C834E0074E75C /* SpotTableViewCell.swift in Sources */,
 				63983575273E1236000EDB4D /* PhotoViewController.swift in Sources */,
 				63CCF6672734CDA9000BA30A /* SpotReviewTableViewCell.swift in Sources */,
+				63878587273F292100F59F08 /* Photo.swift in Sources */,
 				63514A4C272F333300FE16C3 /* APIKeys.swift in Sources */,
 				63E770FA272DC0DA002DFE72 /* Spot.swift in Sources */,
 				63C139B8272B2F4700B229B6 /* SceneDelegate.swift in Sources */,
