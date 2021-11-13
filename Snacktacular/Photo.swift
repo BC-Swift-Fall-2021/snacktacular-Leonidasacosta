@@ -5,6 +5,7 @@
 //  Created by Leonidas Acosta on 11/12/21.
 //
 
+
 import UIKit
 import Firebase
 
@@ -21,6 +22,7 @@ class Photo {
         let timeIntervalDate = date.timeIntervalSince1970
         return ["description": description, "photoUserID": photoUserID, "photoUserEmail": photoUserEmail, "date": timeIntervalDate, "photoURL": photoURL]
     }
+    
     init(image: UIImage, description: String, photoUserID: String, photoUserEmail: String, date: Date, photoURL: String, documentID: String) {
         self.image = image
         self.description = description
@@ -30,6 +32,8 @@ class Photo {
         self.photoURL = photoURL
         self.documentID = documentID
     }
+    
+    
     convenience init() {
         let photoUserID = Auth.auth().currentUser?.uid ?? ""
         let photoUserEmail = Auth.auth().currentUser?.email ?? "unknown email"
@@ -45,6 +49,7 @@ class Photo {
         let photoURL = dictionary["photoURL"] as! String? ?? ""
         self.init(image: UIImage(), description: description, photoUserID: photoUserID, photoUserEmail: photoUserEmail, date: date, photoURL:photoURL, documentID: "")
     }
+    
     func saveData(spot: Spot, completion: @escaping (Bool) -> ()) {
         let db = Firestore.firestore()
         let storage = Storage.storage()
@@ -96,6 +101,24 @@ class Photo {
                 print("ERROR: Upload task for file \(self.documentID) failed, in spot \(spot.documentID), with error \(error.localizedDescription)")
             }
             completion(false)
+        }
+    }
+    
+    func loadImage(spot: Spot, completion: @escaping (Bool) -> ()) {
+        guard spot.documentID != "" else {
+            print("😡 ERROR: did not pass a valid spot into loadImage")
+            return
+        }
+        let storage = Storage.storage()
+        let storageRef = storage.reference().child(spot.documentID).child(documentID)
+        storageRef.getData(maxSize: 25 * 1024 * 1024) { (data, error) in
+            if let error = error {
+                print("ERROR: an error occurred while reading data from file ref: \(storageRef) error = \(error.localizedDescription)")
+                return completion(false)
+            } else {
+                self.image = UIImage(data: data!) ?? UIImage()
+                return completion(true)
+            }
         }
     }
 }

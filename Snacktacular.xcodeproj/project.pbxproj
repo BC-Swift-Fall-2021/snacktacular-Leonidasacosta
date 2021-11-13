@@ -29,6 +29,8 @@
 		63CCF66527349D71000BA30A /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF66427349D71000BA30A /* Reviews.swift */; };
 		63CCF6672734CDA9000BA30A /* SpotReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF6662734CDA9000BA30A /* SpotReviewTableViewCell.swift */; };
 		63E770FA272DC0DA002DFE72 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E770F9272DC0DA002DFE72 /* Spot.swift */; };
+		63FA4F9D2740346B00D46522 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA4F9C2740346B00D46522 /* Photos.swift */; };
+		63FA4F9F27403B8400D46522 /* SpotPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA4F9E27403B8400D46522 /* SpotPhotoCollectionViewCell.swift */; };
 		6C45FF730A3654874A3F5F38 /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72ABA47F10DD1D52683736C1 /* Pods_Snacktacular.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		63CCF66427349D71000BA30A /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		63CCF6662734CDA9000BA30A /* SpotReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewTableViewCell.swift; sourceTree = "<group>"; };
 		63E770F9272DC0DA002DFE72 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		63FA4F9C2740346B00D46522 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		63FA4F9E27403B8400D46522 /* SpotPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		72ABA47F10DD1D52683736C1 /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C676F5CD47C19224933C5962 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,11 +106,13 @@
 				63CCF66227348068000BA30A /* Review.swift */,
 				63CCF66427349D71000BA30A /* Reviews.swift */,
 				63878586273F292100F59F08 /* Photo.swift */,
+				63FA4F9C2740346B00D46522 /* Photos.swift */,
 				63C139B9272B2F4700B229B6 /* LoginViewController.swift */,
 				639A9F5C272B964C007306C8 /* SpotListViewController.swift */,
 				634FF71A272C834E0074E75C /* SpotTableViewCell.swift */,
 				634FF71C272C86A70074E75C /* SpotDetailViewController.swift */,
 				63CCF6662734CDA9000BA30A /* SpotReviewTableViewCell.swift */,
+				63FA4F9E27403B8400D46522 /* SpotPhotoCollectionViewCell.swift */,
 				633C5D3127338DE400B81D58 /* ReviewTableViewController.swift */,
 				63983574273E1236000EDB4D /* PhotoViewController.swift */,
 				63514A47272F158C00FE16C3 /* UIViewController+alert.swift */,
@@ -278,6 +284,7 @@
 				63C139BA272B2F4700B229B6 /* LoginViewController.swift in Sources */,
 				63C139B6272B2F4700B229B6 /* AppDelegate.swift in Sources */,
 				634FF71D272C86A70074E75C /* SpotDetailViewController.swift in Sources */,
+				63FA4F9D2740346B00D46522 /* Photos.swift in Sources */,
 				633C5D3227338DE400B81D58 /* ReviewTableViewController.swift in Sources */,
 				63CCF66327348068000BA30A /* Review.swift in Sources */,
 				63514A4A272F1B2000FE16C3 /* Spots.swift in Sources */,
@@ -289,6 +296,7 @@
 				63514A4C272F333300FE16C3 /* APIKeys.swift in Sources */,
 				63E770FA272DC0DA002DFE72 /* Spot.swift in Sources */,
 				63C139B8272B2F4700B229B6 /* SceneDelegate.swift in Sources */,
+				63FA4F9F27403B8400D46522 /* SpotPhotoCollectionViewCell.swift in Sources */,
 				63514A48272F158C00FE16C3 /* UIViewController+alert.swift in Sources */,
 				6347795C273CE5AE0058FD84 /* UIView+addBorder.swift in Sources */,
 			);

@@ -5,6 +5,7 @@
 //  Created by Leonidas Acosta on 11/4/21.
 //
 
+
 import UIKit
 
 class SpotReviewTableViewCell: UITableViewCell {
