@@ -110,7 +110,7 @@
                     <toolbarItems>
                         <barButtonItem style="plain" id="WJ9-gI-Zwg">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DUI-NH-0RQ">
-                                <rect key="frame" x="20" y="10.666666666666664" width="374" height="33"/>
+                                <rect key="frame" x="20" y="10.5" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="PrimaryColor"/>
                                 <segments>
